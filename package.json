@@ -1,0 +1,13 @@
+{
+  "name": "glacial",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "chalk": "^5.0.1",
+    "dotenv": "^16.0.2",
+    "ethers": "^5.7.1",
+    "web3": "^1.8.0"
+  }
+}
