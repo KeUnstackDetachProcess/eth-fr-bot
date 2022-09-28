@@ -4,6 +4,8 @@
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
+    "abi-decoder": "^2.4.0",
+    "abi-decoder-ts": "^3.0.1",
     "axios": "^0.27.2",
     "chalk": "^5.0.1",
     "dotenv": "^16.0.2",
