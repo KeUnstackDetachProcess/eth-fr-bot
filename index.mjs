@@ -16,12 +16,7 @@ addABI(abi);
 dotenv.config();
 
 const config = {
-  startCoin: process.env.START_COIN,
-  startAmount: process.env.START_AMOUNT,
-  slippage: process.env.SLIPPAGE,
   gasPrice: undefined,
-  gasLimit: process.env.GAS_LIMIT,
-  walletMin: process.env.WALLET_MIN,
   provider: process.env.MAINNET,
   router: process.env.ROUTER,
 };
@@ -63,6 +58,7 @@ quicknodeProvider.on("pending", (tx) => {
       ethAmount = web3.utils.fromWei(gweiAmount.toString(), 'ether');
     }
 
+    // decode transaction data using 'api-decoder' function
     let decodedTxData = decodeMethod(transaction["data"]);
 
     Log.Info(`decodedTxData.params[0].name: "${chalk.cyanBright(decodedTxData.params[0].name)}"`)
